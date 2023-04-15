@@ -1,4 +1,6 @@
 # SafetyProxy
+***Keeping the internet safe and free from hackers.***
+
 A simple Chrome extension to install on Chromebooks and set up. This extension is useful for network management and activity. This is also useful for **schools and enterprise companies who want to step up their gang.**
 
 ## `Setup` the extension
