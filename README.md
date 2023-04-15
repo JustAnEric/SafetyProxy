@@ -14,3 +14,4 @@ If you have not already, open `background.js` inside the unzipped folder. Here y
 The mode parameter is automatically set to handle a PAC script. If you have a PAC script, paste yours into the ` brackets.
 
 The pacScript parameter is optional and is changed accordingly depending on the `mode` parameter.
+
