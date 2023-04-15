@@ -11,7 +11,25 @@ Go to your File Explorer and seek the unzipped folder. Open the unzipped folder 
 ## Editing Proxy server Settings
 If you have not already, open `background.js` inside the unzipped folder. Here you can immediately see some configuration in the variable called `config`.
 
-The mode parameter is automatically set to handle a PAC script. If you have a PAC script, paste yours into the ` brackets.
+The `config["mode"]` parameter is automatically set to handle a PAC script. If you have a PAC script, paste yours in the `config["pacScript"]["data"]` parameter.
 
-The pacScript parameter is optional and is changed accordingly depending on the `mode` parameter.
+The `config["pacScript"]` parameter is optional and is changed accordingly depending on the `config["mode"]` parameter.
 
+## Using a fixed proxy server
+To use a fixed proxy server, replace the `config` variable with the code below:
+```js
+var config = {
+  mode: "fixed_servers",
+  rules: {
+    //proxy server info can go here
+    proxyForHttp: {
+      scheme: "socks5", //your proxy server scheme (http, https, socks4, socks5)
+      host: "1.1.1.14", // your proxy server ip or url (host)
+      port: 80 // your proxy server port
+    },
+    bypassList: [
+    // a list of urls with the scheme like "*.youtube.com" (ones you want to filter from the proxy and make a direct connection to them)
+    ]
+  }
+};
+```
