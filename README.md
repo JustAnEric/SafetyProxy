@@ -4,7 +4,7 @@ A simple Chrome extension to install on Chromebooks and set up. This extension i
 ## `Setup` the extension
 Download the Extension by getting the ZIP file from GitHub.
 
-To install the extension making it ready for preparation, turn on Developer Mode at chrome://extensions and click "Load unpacked" in the top menu. Select the unzipped folder that you got from this GitHub. The extension should now be loaded in for **testing**.
+To install the extension making it ready for preparation, turn on Developer Mode at __chrome://extensions__ and click "Load unpacked" in the top menu. Select the unzipped folder that you got from this GitHub. The extension should now be loaded in for **testing**.
 
 Go to your File Explorer and seek the unzipped folder. Open the unzipped folder and make sure it has a file called `"background.js"` and `"manifest.json"`. If you want to change extension generic properties, `manifest.json` is the place to go. If you want to manage proxy server settings, we will need to go to `background.js`.
 
