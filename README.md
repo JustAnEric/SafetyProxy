@@ -72,3 +72,12 @@ var config = {
   }
 };
 ```
+
+## Updating the extension
+To update easily, use our `update(f)` javascript function in the Developer Tools Console window.
+
+## Removing the extension
+To remove our extension completely, click the 'Remove' button on our extension at chrome://extensions
+
+## Support us
+Support us to make the world and internet a better space and place by contributing!
